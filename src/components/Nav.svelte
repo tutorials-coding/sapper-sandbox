@@ -55,6 +55,30 @@
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+		<li>
+			<a
+				rel=prefetch
+				aria-current="{segment === 'articles' ? 'page' : undefined}"
+				href="articles"
+			>
+				articles
+			</a>
+		</li>
+		<li>
+			<a
+				rel=prefetch
+				href="articles/2021/04/02/nested-routes"
+			>
+				article (nested route)
+			</a>
+		</li>
+		<li>
+			<a
+				rel=prefetch
+				href="notes/2021/04/02/what-is-dynamic-route"
+			>
+				note (dynamic route)
+			</a>
+		</li>
 	</ul>
 </nav>

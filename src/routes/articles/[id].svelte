@@ -21,6 +21,6 @@
 
 <h1>{article.title}</h1>
 
-<div class="content">
+<div>
   {@html article.html}
 </div>
