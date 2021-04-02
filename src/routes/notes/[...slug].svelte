@@ -1,7 +1,7 @@
 <script context="module">
   export async function preload({ params }) {
     const [ year, month, day, id ] = params.slug
-    const res = await this.fetch(`articles/${year}/${month}/${day}/${id}.json`);
+    const res = await this.fetch(`notes/${year}/${month}/${day}/${id}.json`);
     const data = await res.json();
 
     if (res.status === 200) {
